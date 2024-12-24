@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+
+body {
+  background: url('./assets/dice.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  font-family: "Audiowide", sans-serif;
+}
+
+.container {
+  padding: 0 15px 15px 15px;
+  height: 600px;
+  max-width: 700px;
+  margin: 35px auto;
+  text-align: center;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  background: rgba(96, 96, 96, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.637);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.618);
+}
+
+
+@media only screen and (max-width: 56.25em) {
+  .container {
+    height: 550px;
+  }
+}
+
+.container h1 {
+  font-size: 48px;
+  margin-top: 0;
+  padding-top: 80px;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .container h1 {
+    font-size: 35px;
+  }
+}
+
+.roll-dice {
+  max-width: 500px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.score-counter {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+
+.score-counter .player {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .score-counter .player {
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: space-between;
+  }
+}
+
+.dice-output {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.dice-output .dice {
+  border: none;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  font-size: 60px;
+  font-weight: 400;
+  border-radius: 5px;
+  background: rgb(50, 50, 50);
+  color: rgb(240, 240, 240);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .dice {
+    padding: 10px 25px;
+    font-size: 40px;
+    font-weight: 200;
+  }
+}
+
+.dice-output .dice .output1 {
+  margin-right: 50px;
+}
+
+.dice-output .dice .output2 {
+  margin-right: 50px;
+}
+
+
+.glow {
+  box-shadow: rgb(50, 217, 250) 0px 0px 20px 2px;
+}
+
+.play-button {
+  width: 50%;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 28px;
+  margin-top: 70px;
+  background: rgb(50, 50, 50);
+  color: rgb(255, 255, 255);
+}
+
+
+@media only screen and (max-width: 56.25em) {
+  .play-button {
+    width: 60%;
+    font-size: 22px;
+  }
+}
+
+footer {
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+footer a:hover {
+  font-style: italic;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+  background-color: rgb(240, 240, 240);
+}
